@@ -1,0 +1,101 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/sp/v2/column-formatting.schema.json",
+  "elmType": "div",
+  "style": {
+    "margin": "0px 10px"
+  },
+  "children": [
+    {
+      "elmType": "div",
+      "style": {
+        "width": "24px",
+        "height": "24px",
+        "border-radius": "50%",
+        "display": "=if([$ThisField] != 'Yes', 'flex','none')",
+        "justify-content": "center",
+        "align-items": "center",
+        "font-size": "16px",
+        "cursor": "=if([$ThisField] == 'Yes', '','pointer')",
+        "margin": "0px 10px",
+        "font-weight": "bold"
+      },
+      "attributes": {
+        "class": "=if([$ThisField] == 'No', 'sp-css-backgroundColor-neutralBackground30 sp-css-backgroundColor-BgGreen--hover sp-css-color-WhiteText', 'sp-css-backgroundColor-BgGreen sp-css-backgroundColor-BgDarkGreen--hover sp-css-color-WhiteText')",
+        "iconName": "Accept"
+      },
+      "customRowAction": {
+        "action": "setValue",
+        "actionInput": {
+          "ThisField": "Yes",
+          "PersonField": "@me",
+          "TimeField": "@now"
+        }
+      }
+    },
+    {
+      "elmType": "div",
+      "style": {
+        "width": "24px",
+        "height": "24px",
+        "border-radius": "50%",
+        "display": "=if([$ThisField] == 'Yes', 'flex','none')",
+        "justify-content": "center",
+        "align-items": "center",
+        "font-size": "16px",
+        "cursor": "=if([$ThisField] == 'Yes', '','pointer')",
+        "margin": "0px 10px",
+        "font-weight": "bold"
+      },
+      "attributes": {
+        "class": "=if([$ThisField] == 'No', 'sp-css-backgroundColor-neutralBackground30 sp-css-backgroundColor-BgGray--hover sp-css-color-WhiteText', 'sp-css-backgroundColor-BgGreen sp-css-backgroundColor-BgDarkGreen--hover sp-css-color-WhiteText')",
+        "iconName": "Accept"
+      }
+    },
+    {
+      "elmType": "div",
+      "style": {
+        "width": "24px",
+        "height": "24px",
+        "border-radius": "50%",
+        "display": "=if([$ThisField] != 'No', 'flex','none')",
+        "justify-content": "center",
+        "align-items": "center",
+        "font-size": "16px",
+        "cursor": "=if([$ThisField] == 'No', '','pointer')",
+        "margin": "0px 10px",
+        "font-weight": "bold"
+      },
+      "attributes": {
+        "class": "=if([$ThisField] == 'Yes', 'sp-css-backgroundColor-neutralBackground30 sp-css-backgroundColor-BgRed--hover sp-css-color-WhiteText', 'sp-css-backgroundColor-BgRed sp-css-backgroundColor-BgDarkRed--hover sp-css-color-WhiteText')",
+        "iconName": "Clear"
+      },
+      "customRowAction": {
+        "action": "setValue",
+        "actionInput": {
+          "ThisField": "No",
+          "PersonField": "@me",
+          "TimeField": "@now"
+        }
+      }
+    },
+    {
+      "elmType": "div",
+      "style": {
+        "width": "24px",
+        "height": "24px",
+        "border-radius": "50%",
+        "display": "=if([$ThisField] == 'No', 'flex','none')",
+        "justify-content": "center",
+        "align-items": "center",
+        "font-size": "16px",
+        "cursor": "=if([$ThisField] == 'No', '','pointer')",
+        "margin": "0px 10px",
+        "font-weight": "bold"
+      },
+      "attributes": {
+        "class": "=if([$ThisField] == 'Yes', 'sp-css-backgroundColor-neutralBackground30 sp-css-backgroundColor-BgGray--hover sp-css-color-WhiteText', 'sp-css-backgroundColor-BgRed sp-css-backgroundColor-BgDarkRed--hover sp-css-color-WhiteText')",
+        "iconName": "Clear"
+      }
+    }
+  ]
+}
