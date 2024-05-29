@@ -3,5 +3,6 @@
 
 This button toggles the "Yes/No" field used for archiving. The color changes on hover, and icon/color change according to the value of the field.
 
-![image](https://github.com/aolson28/Microsoft-List-and-Power-Automate/assets/123501344/e1aef057-e870-4e09-8e83-36e6806cbd27)
+![image](https://github.com/aolson28/Microsoft-List-and-Power-Automate/assets/123501344/478b11ed-394c-4ecc-9aa0-245586fd672b)
+
 
